@@ -3,9 +3,5 @@
 * [Introduction](README.md)
 * [动态规划](动态规划.md)
 * [数据结构](shu-ju-jie-gou.md)
-  * [线性表](shu-ju-jie-gou/xian-xing-biao.md)
-  * 链表
-  * 栈
-  * 队列
-  * 优先队列
+  * [线性表](xian-xing-biao.md)
 
