@@ -33,8 +33,9 @@ $$
 
 - $$2n^{2} + 3n + O(n^{2}) = O(n^{2})$$：表示对于等号左侧任意的匿名函数，等号右侧总存在某个匿名函数使等号成立
 
-#### 渐进等式VS实数不等式
-实数的许多性质也适用于渐进记号：
+#### 渐进记号运算律
+实数的许多性质也适用于渐进记号，通过简单的类比实数的不等式性质可以轻松推测出对应渐进记号类似的性质：
+
 - 基本类比
 
 $$f(n) = \Theta (g(n))   \Leftrightarrow  a = b$$   
@@ -65,10 +66,18 @@ $$f(n) = O (g(n))  \Leftrightarrow g(n) = \Omega (f(n))$$
 $$a \geqslant b\Leftrightarrow b\leqslant a$$
 $$f(n) = \Omega(g(n))  \Leftrightarrow g(n) = O (f(n))$$
 
+- 加法法则：
+$$
+T(n) = T_{1}(n) +T_{2}(n)  = O(f(n)) + O(g(n)) = O(max(f(n),g(n)))
+$$
+- 乘法法则：
+$$
+T(n) = T_{1}(n) \times T_{2}(n)  = O(f(n)) \times  O(g(n)) = O(max(f(n)\times g(n)))
+$$
 
+### 常见渐进函数
 
-
-
+$$O(1) < O(lgn) < O(n) <O(nlgn)<O(n^{2})<O(2^{n})<O(n!)<O(n^{n})$$
 
 
 
